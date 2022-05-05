@@ -1,0 +1,179 @@
+@import '~antd/dist/antd.css';
+
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.grid-header{
+  height: 10vh;
+}
+.container{
+  display: flex;
+}
+.avatar-grid{
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.title-grid h3{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.title-grid p{
+  margin-left: 10px;
+  text-align: left;
+}
+.videoLayout{
+  background-color: black;
+  color: darkgray;
+  height: 80vh;
+  width: 100%;
+} 
+.small-vid{
+  background-color: black;
+  color: darkgray;
+  height: 80vh;
+  width: calc(100% - 400px);
+}
+.videoLayout h1{
+  color: gray;
+  text-align: center;
+  padding-top: 40vh;
+}
+.small-vid h1{
+  color: gray;
+  text-align: center;
+  padding-top: 40vh;
+}
+.grid-footer{
+  height: 10vh;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+}
+.button-array{
+  width: 55%;
+  display: flex;
+  justify-content: right;
+}
+.button-live{
+  width: 45%;
+  display: flex;
+  justify-content: right;
+  margin-right: 60px;
+}
+.live-center-button{
+  width: 45%;
+  display: flex;
+  justify-content: right;
+  margin-right: 120px;
+}
+.sidebar {
+  height: 100vh;
+  margin-right: 24px;
+  position: absolute;
+}
+.side-bar{
+  position: absolute;
+  width: 400px;
+  height: 100vh;
+  background-color: white;
+  z-index: 5;
+  transition: width 2s, height 4s;
+}
+.visible{
+  top: 0px;
+  right: 0px;
+}
+.hidden{
+  top: 0px;
+  right: -500px;
+}
+.pop{
+  bottom: 0px;
+  right: 0px;
+}
+.onlinePop{
+  position: absolute;
+  width: 200px;
+  height: 50vh;
+  background-color: white;
+  z-index: 6;
+}
+.hide{
+  bottom: 0px;
+  right: -500px;
+}
+.nav-button-group{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.nav-button{
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  z-index: 6;
+}
+.sidebar-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  
+}
+.chat-body{
+  margin: 30px 10px 50px 10px;
+}
+
+.chatBubble-body{
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.chatBubble {
+	margin: 10px;
+  display: inline-flex;
+  position: relative;
+	width: 200px;
+	height: auto;
+	background-color: rgb(223, 143, 255);
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+}
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: rgb(223, 143, 255) rgb(223, 143, 255) transparent transparent;
+}
+.chatInput{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+.chatInput Input{
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 5px;
+}
